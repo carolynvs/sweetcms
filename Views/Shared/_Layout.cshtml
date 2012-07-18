@@ -1,54 +1,46 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
-        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <meta name="viewport" content="width=device-width" />
-        @Styles.Render("~/Content/themes/base/css", "~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
-    </head>
-    <body>
-        <header>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("Your logo here", "Index", "Home")</p>
-                </div>
-                <div class="float-right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                    </section>
-                    <nav>
-                        <ul id="menu">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <div id="body">
-            @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
-                @RenderBody()
-            </section>
+﻿@{
+    string title = @ViewBag.Title ?? @ViewBag.Title + " - SweetGeek";
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- #BeginEditable "doc_title" -->
+    <title>@title</title>
+    <!-- #EndEditable -->
+    <link href="~/Content/orange_theme.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+    
+    @RenderSection("head", required: false)
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="~/">
+                <img src="~/Content/logo.png" alt="Sweet Geek Logo" />
+                Sweet Geek </a>
+            <nav style="float: right;">
+                <a href="~/About">About</a> <a href="~/Diabetes">Diabetes</a> <a href="~/Science">Science!</a>
+                <a href="http://blog.sweetgeek.net">Blog</a>
+            </nav>
         </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
-                </div>
-                <div class="float-right">
-                    <ul id="social">
-                        <li><a href="http://facebook.com" class="facebook">Facebook</a></li>
-                        <li><a href="http://twitter.com" class="twitter">Twitter</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-
-        @Scripts.Render("~/bundles/jquery")
-        @RenderSection("scripts", required: false)
-    </body>
+        @if (ViewBag.Breadcrumb != null)
+        {
+            <div id="Breadcrumb">@ViewBag.Breadcrumb</div>
+        }
+        @if (ViewBag.PageTitle != null)
+        {
+            <div id="page-title">@ViewBag.PageTitle</div>
+        }
+    </header>
+    @RenderSection("featured", required: false)
+    <div id="page-content">
+        @RenderBody()
+    </div>
+    <footer>
+        <a id="disclaimer" href="~/Disclaimer">Disclaimer</a> <a id="site-index" href="~/SiteIndex">
+            Site Index</a>
+        <div id="copyright">
+            &copy; sweetgeek.net</div>
+    </footer>
+</body>
 </html>

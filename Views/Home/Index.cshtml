@@ -1,40 +1,99 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Sweet Geek - Thoughts on Health and Nutrition";
 }
-@section featured {
-    <section class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1>@ViewBag.Title.</h1>
-                <h2>@ViewBag.Message</h2>
-            </hgroup>
-            <p>
-                To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">
-                    http://asp.net/mvc</a>. The page features <mark>videos, tutorials,
-                        and samples</mark> to help you get the most from ASP.NET MVC. If you have
-                any questions about ASP.NET MVC visit <a href="http://forums.asp.net/1146.aspx/1?MVC"
-                    title="ASP.NET MVC Forum">our forums</a>.
-            </p>
-        </div>
-    </section>
+@section head {
+    <style>
+        #Breadcrumb, #page-title
+        {
+            display: none;
+        }
+        #site-contents
+        {
+            padding: 20px;
+        }
+        .site-content
+        {
+            border: thin #b76401 solid;
+            float: left;
+            margin: 0px 20px 20px 20px;
+            padding: 0px 10px 10px 10px;
+            width: 40%;
+            min-width: 200px;
+            min-height: 200px;;
+            border-radius: 10px 10px 10px 10px;
+        }
+        .site-content img
+        {
+            float: right;
+            margin: 10px 5px 0px 5px;
+        }
+        .site-content li{
+            list-style-type: circle;
+        }
+        .site-content:nth-child(odd)
+        {
+            clear: left;
+        }
+    </style>
 }
-<h3>We suggest the following:</h3>
-<ol class="round">
-    <li class="one">
-        <h5>Getting Started</h5>
-        ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-        enables a clean separation of concerns and that gives you full control over markup
-        for enjoyable, agile development. ASP.NET MVC includes many features that enable
-        fast, TDD-friendly development for creating sophisticated applications that use
-        the latest web standards. <a href="http://go.microsoft.com/fwlink/?LinkId=245151">Learn
-            more</a></li>
-    <li class="two">
-        <h5>Add NuGet packages and jump start your coding</h5>
-        NuGet makes it easy to install and update free libraries and tools. <a href="http://go.microsoft.com/fwlink/?LinkId=245153">
-            Learn more</a></li>
-    <li class="three">
-        <h5>Find Web Hosting</h5>
-        You can easily find a web hosting company that offers the right mix of features
-        and price for your applications. <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn
-            more</a></li>
-</ol>
+<div id="site-contents">
+    <div class="site-content">
+        <img src="~/Content/logo.png" alt="SweetGeek Avatar" height="49" width="45" />
+        <h3>
+            <a href="~/About">About</a></h3>
+        <p>
+            I'm not a doctor, just a geek who is very interested in health and nutrition.</p>
+        <ul>
+            <li><a href="~/About">The Woman Behind the Fuzzy Avatar</a></li>
+            <li><a href="http://blog.sweetgeek.net/2011/10/responsethe-patients-voice-project/">
+                Patients Voice Project: My Story</a></li>
+            <li><a href="~/LowCarbSuccessStory">My Low-Carb Success Story</a></li>
+            <li><a href="http://blog.sweetgeek.net/category/personal-updates/">Personal Updates</a></li>
+        </ul>
+    </div>
+    <div class="site-content">
+        <img src="~/Images/news.png" alt="Newspaper" height="48" width="48" />
+        <h3>
+            <a href="http://blog.sweetgeek.net/">Recent Blog Posts</a></h3>
+        <p>
+            My successes, setbacks and random info found while "<a href="http://blog.sweetgeek.net/category/internets/">reading
+                the internets</a>".</p>
+        <ul>
+            <li><a href="http://blog.sweetgeek.net/2012/07/ketogenic-ratio-and-weight-loss/">Ketogenic
+                Ratio and Weight Loss</a></li>
+            <li><a href="http://blog.sweetgeek.net/2012/07/ketogenic-diet-success/">Ketogenic Diet
+                Success</a></li>
+            <li><a href="http://blog.sweetgeek.net/2012/06/exercise-and-blood-sugar-or-why-i-feel-like-crap-right-now/">
+                Exercise and Blood Sugar: Or Why I Feel Like Crap Right Now</a></li>
+            <li><a href="http://blog.sweetgeek.net/2012/02/high-cholesterol-on-a-low-carb-paleo-diet/">
+                High Cholesterol on a Low-Carb Paleo Diet</a></li>
+            <li><a href="http://blog.sweetgeek.net/">More...</a></li>
+        </ul>
+    </div>
+    <div class="site-content">
+        <img src="~/Images/holmes.png" alt="Sherlock Holmes" height="48" width="48" />
+        <h3>
+            <a href="~/Science">Science!</a></h3>
+        <p>
+            My interpretation and understanding of the science behind health and nutrition.</p>
+        <ul>
+            <li><a href="~/Science/Bio101-HDL-LDL">Bio 101: HDL and LDL</a></li>
+            <li><a href="~/Science/cholesterol">Cholesterol and Heart Disease</a></li>
+            <li><a href="~/Food/Protein">How Much Protein Should You Eat?</a></li>
+            <li><a href="~/Science">More...</a></li>
+        </ul>
+    </div>
+    <div class="site-content">
+        <img src="~/Images/injection.png" alt="Syringe and Needle" height="48" width="48" />
+        <h3>
+            <a href="~/Diabetes">Diabetes</a></h3>
+        <p>
+            I was diagnosed in 2010 and am now happily managing with diet alone.</p>
+        <ul>
+            <li><a href="~/Diabetes">Dealing with Diabetes</a></li>
+            <li><a href="~/Food">My "Diabetic" Diet</a></li>
+            <li><a href="~/Diabetes/resources">Diabetic Resources</a></li>
+            <li><a href="~/Diabetes">More...</a></li>
+        </ul>
+    </div>
+</div>
