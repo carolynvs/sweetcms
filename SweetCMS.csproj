@@ -145,6 +145,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\logo.png" />
+    <Content Include="Content\logo_animated.gif" />
+    <Content Include="Content\nutrition.css" />
+    <Content Include="Content\orange_theme.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -174,6 +178,14 @@
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\hdl_size.png" />
+    <Content Include="Images\holmes.png" />
+    <Content Include="Images\injection.png" />
+    <Content Include="Images\ketogenic_pie_chart.png" />
+    <Content Include="Images\ldl_sizes.png" />
+    <Content Include="Images\news.png" />
+    <Content Include="Images\star.png" />
+    <Content Include="Images\stethoscope.png" />
     <Content Include="Scripts\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.2.js" />
     <Content Include="Scripts\jquery-1.6.2.min.js" />
@@ -238,6 +250,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Test.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Diabetes\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Diabetes\Diet.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
