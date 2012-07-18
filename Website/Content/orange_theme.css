@@ -1,0 +1,280 @@
+﻿body
+{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#logo 
+{
+	border-bottom: thin #b76401 solid;	
+}
+#logo a
+{
+	font-family: Cambria, Cochin, Georgia, serif;
+	color: #b76401;
+	font-size: 200%;
+	text-decoration: none;
+}
+#logo nav
+{
+	float: right;
+}
+#logo nav a
+{
+	font-size: 150%;
+	padding-right: 20px;
+}
+#logo nav a:link
+{
+	color: #b76401;
+}
+#logo nav a:visited
+{
+	color: firebrick;
+}
+#logo nav a:hover, #logo nav a:focus
+{
+	color: #7491A3;
+}
+.callout {
+	border: thin dotted #800000;
+	background-color: #FFFFCC;
+	font-style: italic;
+	color: #800000;
+}
+.center {
+	text-align: center;
+}
+.hidden
+{
+	display:none;
+}
+.citation {
+	vertical-align: super;
+	font-size: small;
+}
+header
+{
+	font-family: Cambria, Cochin, Georgia, serif;
+	display: block;
+	min-width: 600px;
+}
+header img
+{
+	float: left;
+}
+footer
+{
+	border-top: thin #b76401 solid;
+	padding-top: 10px;
+	height: 50px;
+	float: none;
+	clear: both;
+	display: block;
+}
+#copyright
+{
+	float: left;
+	width: 33%;
+	text-align: right;
+}
+#site-index
+{
+	float: left;
+	text-align: center;
+	width: 33%;
+}
+#disclaimer
+{
+	float: left;
+	text-align: left;
+	width: 33%;
+}
+#page-title
+{
+	float: left;
+	width: 80%;
+	padding: 5px 5px 10px 5px;
+	font-family: Cambria, Cochin, Georgia, serif;
+	color: #b76401;
+	font-size: 150%;
+	text-align: center;
+	font-size: 200%;
+}
+#page-content
+{
+	clear: both;
+	float: none;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+h1, h2, h3, h4, h5,
+h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link
+{
+	font-family: Cambria, Cochin, Georgia, serif;
+	color: #b76401;
+	text-decoration: none;
+}
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited
+{
+	color: firebrick;
+	text-decoration: none;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover,
+h1 a:focus, h2 a:focus, h3 a:focus, h4 a:focus, h5 a:focus
+{
+	color: #7491A3;
+	text-decoration: none;
+}
+h1{
+	font-weight: normal;
+}
+a:link
+{
+	color: #B76401;
+	text-align: left;
+}
+a:visited
+{
+	color: firebrick;
+}
+a:hover, a:focus
+{
+	color: #7491A3;
+}
+a img /* ie hack */
+{
+	border-style: none;
+	text-decoration: none;
+	border-width: 0px;
+}
+.wide-spaced li
+{
+	margin-bottom: 10px;
+}
+.indented
+{
+	margin-left: 25px;
+}
+td
+{
+	vertical-align: top;
+}
+code
+{
+	display: block;
+	border-width: 1px;
+	border-style: dashed;
+	border-color: #7491A3;
+	background-color: #EFECE5;
+	padding: 10px;
+}
+.recipe .variations h4
+{
+	color: #990000;
+	font-weight: normal;
+}
+.ReadBookReviews
+{
+	text-align:right;
+	font-style:italic;
+}
+.BookReview #Title
+{
+	font-weight: bold;
+	padding-bottom: 0;
+	margin-bottom: 0;
+
+}
+.BookReview #Author
+{
+	padding-top: 0;
+	margin-top: 0;
+}
+.BookReview #Topics
+{
+	font-style: italic;
+	font-size: smaller;
+}
+.BookReview img
+{
+	float: right;
+}
+#Breadcrumb
+{
+	font-size: 75%;
+	float: left;
+	padding: 5px 5px 10px 5px;
+}
+.note
+{
+	font-size: smaller;
+}
+th
+{
+	font-weight: bold;
+}
+.outlined
+{
+	border: thin gray solid;
+	border-collapse: collapse;
+}
+.outlined td, .outlined th
+{
+	border: thin gray solid;
+	padding: 2px 5px 2px 5px;
+}
+#photos
+{
+	clear: both;
+}
+#photos img, .album
+{
+	padding: 10px;
+	margin: 5px;
+	border: thin silver solid;
+}
+#photos img:hover, .album:hover
+{
+	border: thin maroon solid;
+}
+
+#albums
+{
+	clear: both;
+}
+.album 
+{
+	width: 350px;
+	float: left;
+}
+.album p
+{
+	clear: both;
+	text-align:center;
+	font-weight: bold;
+}
+ul.nobullet
+{
+	list-style-type: none;
+}
+.section-title
+{
+	font-size: x-large;
+	color: #b76401;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	border-bottom: thin gray solid;
+	float: none;
+	clear: both;
+
+}
+.reading-list img
+{
+	float: left;
+	padding: 10px;
+}
+.reading-list .book
+{
+	float: none;
+	clear: both;
+}
