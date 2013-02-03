@@ -10,7 +10,7 @@ namespace SweetCMS
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            SweetCMSRouteHelper.RegisterRoutes(routes, "Dynamic");
+            SweetCMSRouteHelper.RegisterRoutes(routes, controller: "Dynamic");
         }
     }
 }

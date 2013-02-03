@@ -121,13 +121,12 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="CustomContent\Web.config" />
+    <Content Include="CustomContent\_ViewStart.cshtml" />
+    <Content Include="CustomContent\Shared\Error.cshtml" />
+    <Content Include="CustomContent\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Scripts\Common\" />
     <Folder Include="Styles\Common\" />
   </ItemGroup>
@@ -135,13 +134,13 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Dynamic\Index.cshtml" />
+    <Content Include="CustomContent\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Dynamic\Test.cshtml" />
+    <Content Include="CustomContent\Test.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Dynamic\Foobar\Index.cshtml" />
+    <Content Include="CustomContent\Foobar\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SweetCMS.Core\SweetCMS.Core.csproj">

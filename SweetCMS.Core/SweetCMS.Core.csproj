@@ -83,6 +83,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SweetCMSBundleConfigHelper.cs" />
     <Compile Include="SweetCMSRouteHelper.cs" />
+    <Compile Include="SweetCMSViewEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
